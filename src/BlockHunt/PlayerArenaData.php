@@ -26,4 +26,3 @@ class PlayerArenaData {
 		$this->pFlying = $pFlying;
 	}
 }
-?>
