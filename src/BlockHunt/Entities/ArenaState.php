@@ -12,4 +12,3 @@ class ArenaState extends Enum
 	 const INGAME = 4;
 	 const RESTARTING = 5;
 }
-?>
