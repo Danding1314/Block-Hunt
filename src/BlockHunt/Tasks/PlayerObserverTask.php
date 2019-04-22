@@ -17,4 +17,3 @@ class PlayerObserverTask extends PluginTask{
 	}
 }
 
-?>
