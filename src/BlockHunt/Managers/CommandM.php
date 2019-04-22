@@ -36,4 +36,4 @@ class CommandM {
 		$this->plugin->commands->add($me);
 	}
 }
-?>
+
