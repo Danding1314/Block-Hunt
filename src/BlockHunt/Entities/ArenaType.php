@@ -14,4 +14,3 @@ class ArenaType extends SplEnum
 	const seekersTokenWin = 8;
 	const killTokens = 9;
 }
-?>
