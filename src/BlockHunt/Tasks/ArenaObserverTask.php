@@ -341,4 +341,3 @@ class ArenaObserverTask extends PluginTask{
 		}
 	}
 }
-?>
