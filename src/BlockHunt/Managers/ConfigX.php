@@ -1,10 +1,11 @@
 <?php
-namespace HideHunt\Managers;
+namespace BlockHunt\Managers;
 
 use pocketmine\utils\TextFormat;
 use pocketmine\utils\Config;
 
-class ConfigX {
+class ConfigX 
+{
 	private $plugin;
 	private $filename;
 	
