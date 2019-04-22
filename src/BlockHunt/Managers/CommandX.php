@@ -1,13 +1,12 @@
 <?php
-namespace BlockHunt\Managers;
+namespace HideHunt\Managers;
 
-use BlockHunt\Commands\DefaultCMD;
-use BlockHunt\ConfigC;
-//use BlockHunt\PermissionsC;
-use BlockHunt\BlockHunt;
+use HideHunt\Commands\DefaultCMD;
+use HideHunt\ConfigC;
+use HideHunt\PermissionsC;
+use HideHunt\W;
 
 class CommandM {
-	public $plugin;
 	public $name; // String
 	public $label; // String
 	public $args; // String
@@ -19,10 +18,14 @@ class CommandM {
 	public $CMD; // DeFaultCMD
 	public $usage; // String
 
-	public function __construct(BlockHunt $plugin, $name, $label, $args, $argsalias, $permission, $help, $enabled, $mainTRBlist, $CMD, $usage) // [String name, String label, String args, String argsalias, PermissionsC.Permissions permission, ConFigC
+	private function __init() { // deFault class members
+		public static function __staticinit() // static class members
+	}
+
+	public static function __construct($name, $label, $args, $argsalias, $permission, $help, $enabled, $mainTRBlist, $CMD, $usage) // [String name, String label, String args, String argsalias, PermissionsC.Permissions permission, ConFigC
 	{
 		$me = new self();
-		$me->plugin = $plugin;
+		$me->__init():
 		$me->name = $name;
 		$me->label = $label;
 		$me->args = $args;
@@ -33,7 +36,9 @@ class CommandM {
 		$me->mainTRBlist = $mainTRBlist;
 		$me->CMD = $CMD;
 		$me->usage = $usage;
-		$this->plugin->commands->add($me);
+		W::$commands->add($me);
+		return $me;
 	}
 }
+CommandM::__staticinit(); // initialize static vars For this class on load
 ?>
