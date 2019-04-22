@@ -26,4 +26,3 @@ class OnSignChangeEvent implements Listener
 	 }
 	}
 }
-?>
