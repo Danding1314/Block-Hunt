@@ -41,4 +41,4 @@ class CommandM {
 	}
 }
 CommandM::__staticinit(); // initialize static vars For this class on load
-?>
+
