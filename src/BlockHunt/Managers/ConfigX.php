@@ -4,7 +4,7 @@ namespace HideHunt\Managers;
 use pocketmine\utils\TextFormat;
 use pocketmine\utils\Config;
 
-class ConfigX{
+class ConfigX {
 	private $plugin;
 	private $filename;
 	
