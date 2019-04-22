@@ -13,4 +13,3 @@ class DefaultCMD {
 		return true;
 	}
 }
-?>
