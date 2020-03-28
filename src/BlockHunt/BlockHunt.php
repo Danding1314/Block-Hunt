@@ -143,7 +143,6 @@ class BlockHunt extends PluginBase implements Listener{
 				}
 			}
 		}
-
 		CMDnotfound.execute(player, cmd, label, args);
 		return true;
 	}
